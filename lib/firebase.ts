@@ -19,14 +19,3 @@ export const db = getFirestore(app);
 
 // Initialize Firebase Authentication
 export const auth = getAuth(app);
-
-// Initialize Firebase Cloud Messaging (only in browser)
-export const getMessagingInstance = async () => {
-  if (typeof window !== 'undefined') {
-    const { getMessaging, isSupported } = await import('firebase/messaging');
-    if (await isSupported()) {
-      return getMessaging(app);
-    }
-  }
-  return null;
-};
