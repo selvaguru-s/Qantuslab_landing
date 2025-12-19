@@ -1,0 +1,110 @@
+<svg viewBox="0 0 240 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Qantuslab Logo with Text">
+  <defs>
+    <!-- Orange to Blue Gradient -->
+    <linearGradient
+      id="qantuslab-gradient-text"
+      x1="0%"
+      y1="0%"
+      x2="100%"
+      y2="100%"
+      gradientTransform="rotate(135)"
+    >
+      <stop offset="0%" stop-color="#ff6b35" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Radial gradient for nucleus -->
+    <radialGradient id="nucleus-glow-text">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ff6b35" />
+    </radialGradient>
+  </defs>
+
+  <!-- Logo Icon (positioned at left) -->
+  <g>
+    <!-- Central Nucleus - glowing core -->
+    <circle cx="50" cy="50" r="8" fill="url(#nucleus-glow-text)" opacity="0.9" />
+    <circle cx="50" cy="50" r="5" fill="#ff6b35" />
+
+    <!-- Orbital Path 1 - horizontal ellipse -->
+    <ellipse
+      cx="50"
+      cy="50"
+      rx="35"
+      ry="15"
+      stroke="#ff6b35"
+      stroke-width="3"
+      fill="none"
+      opacity="1"
+    />
+
+    <!-- Orbital Path 2 - tilted ellipse (60 degrees) -->
+    <ellipse
+      cx="50"
+      cy="50"
+      rx="35"
+      ry="15"
+      stroke="#ff6b35"
+      stroke-width="3"
+      fill="none"
+      opacity="1"
+      transform="rotate(60 50 50)"
+    />
+
+    <!-- Orbital Path 3 - tilted ellipse (120 degrees) -->
+    <ellipse
+      cx="50"
+      cy="50"
+      rx="35"
+      ry="15"
+      stroke="#ff6b35"
+      stroke-width="3"
+      fill="none"
+      opacity="1"
+      transform="rotate(120 50 50)"
+    />
+
+    <!-- Electron 1 on orbit path 1 - right side -->
+    <circle cx="85" cy="50" r="3.5" fill="#3b82f6" opacity="0.9" />
+
+    <!-- Electron 2 on orbit path 1 - left side -->
+    <circle cx="15" cy="50" r="3" fill="#ff6b35" opacity="0.8" />
+
+    <!-- Electron 3 on orbit path 2 -->
+    <g transform="rotate(60 50 50)">
+      <circle cx="85" cy="50" r="3.5" fill="#f59e0b" opacity="0.9" />
+    </g>
+
+    <!-- Electron 4 on orbit path 2 (offset) -->
+    <g transform="rotate(60 50 50)">
+      <circle cx="15" cy="50" r="3" fill="#f59e0b" opacity="0.7" />
+    </g>
+
+    <!-- Electron 5 on orbit path 3 -->
+    <g transform="rotate(120 50 50)">
+      <circle cx="85" cy="50" r="3.5" fill="#3b82f6" opacity="0.9" />
+    </g>
+
+    <!-- Electron 6 on orbit path 3 (offset) -->
+    <g transform="rotate(120 50 50)">
+      <circle cx="15" cy="50" r="3" fill="#ff6b35" opacity="0.7" />
+    </g>
+
+    <!-- Energy glow effect -->
+    <circle cx="50" cy="50" r="12" fill="url(#qantuslab-gradient-text)" opacity="0.15" />
+  </g>
+
+  <!-- Qantuslab Text -->
+  <text
+    x="110"
+    y="60"
+    font-family="Inter, system-ui, -apple-system, sans-serif"
+    font-size="32"
+    font-weight="700"
+    fill="#1f2937"
+    letter-spacing="-0.02em"
+  >
+    Qantuslab
+  </text>
+</svg>
