@@ -70,7 +70,7 @@ export function ServicesPreview() {
                         <service.icon className="h-6 w-6 text-primary" />
                       </div>
                     </div>
-                    <Badge variant="secondary" size="sm">
+                    <Badge variant="secondary">
                       {service.subcategoryCount} services
                     </Badge>
                   </div>
@@ -84,7 +84,7 @@ export function ServicesPreview() {
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {service.trending.map((trend) => (
-                        <Badge key={trend} variant="outline" size="sm">
+                        <Badge key={trend} variant="outline">
                           {trend}
                         </Badge>
                       ))}

@@ -37,7 +37,7 @@ export function TechnicalDetailsAccordion({
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {category.technologies.map((tech) => (
-                      <Badge key={tech} variant="secondary" size="sm">
+                      <Badge key={tech} variant="secondary">
                         {tech}
                       </Badge>
                     ))}
@@ -130,7 +130,7 @@ export function TechnicalDetailsAccordion({
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {details.integration.platforms.map((platform) => (
-                    <Badge key={platform} variant="outline" size="sm">
+                    <Badge key={platform} variant="outline">
                       {platform}
                     </Badge>
                   ))}
@@ -142,7 +142,7 @@ export function TechnicalDetailsAccordion({
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {details.integration.deploymentOptions.map((option) => (
-                    <Badge key={option} variant="outline" size="sm">
+                    <Badge key={option} variant="outline">
                       {option}
                     </Badge>
                   ))}
@@ -152,7 +152,7 @@ export function TechnicalDetailsAccordion({
                 <h4 className="mb-2 text-sm font-semibold">API Support</h4>
                 <div className="flex flex-wrap gap-2">
                   {details.integration.apiSupport.map((api) => (
-                    <Badge key={api} variant="outline" size="sm">
+                    <Badge key={api} variant="outline">
                       {api}
                     </Badge>
                   ))}

@@ -11,7 +11,7 @@ export function TrendingBadge({ trendInfo, className }: TrendingBadgeProps) {
   return (
     <div className={cn("group relative inline-flex", className)}>
       <Badge
-        variant="success"
+        variant="gradient"
         className="animate-pulse-glow flex items-center gap-1"
       >
         <Sparkles className="h-3 w-3" />
