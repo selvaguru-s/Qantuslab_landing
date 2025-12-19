@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     "Insights, trends, and guides on AI for business. Learn how to leverage AI to transform your operations.",
 };
 
+// Force dynamic rendering to always fetch fresh data
+export const dynamic = 'force-dynamic';
+
 export default async function BlogPage() {
   const posts = await getAllPosts();
 

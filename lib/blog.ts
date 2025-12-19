@@ -18,15 +18,17 @@ export async function getAllPosts(): Promise<BlogPost[]> {
   try {
     const q = query(
       collection(db, 'posts'),
-      where('published', '==', true),
-      orderBy('date', 'desc')
+      where('published', '==', true)
     );
 
     const snapshot = await getDocs(q);
-    return snapshot.docs.map((doc) => ({
+    const posts = snapshot.docs.map((doc) => ({
       id: doc.id,
       ...doc.data(),
     })) as BlogPost[];
+
+    // Sort by date on client side
+    return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   } catch (error) {
     console.error('Error fetching blog posts:', error);
     return [];
