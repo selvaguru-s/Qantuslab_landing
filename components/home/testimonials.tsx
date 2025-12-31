@@ -5,20 +5,20 @@ const testimonials = [
   {
     quote:
       "AI Solutions helped us automate our customer support, reducing response times by 80%. Our team now focuses on complex issues while AI handles the routine.",
-    author: "Sarah Chen",
-    role: "COO, TechStart Inc.",
+    author: "Karthick",
+    role: "Design and Development engineer at Trane Technologies",
   },
   {
     quote:
       "We went from spending 20 hours a week on content creation to 2 hours. The AI-generated content is indistinguishable from human-written, and our engagement is up 150%.",
-    author: "Michael Torres",
-    role: "Marketing Director, GrowthCo",
+    author: "prakash",
+    role: "Content Creator",
   },
   {
     quote:
       "The custom AI agent they built for our sales team is like having 10 additional employees. It qualifies leads, schedules meetings, and follows up - all automatically.",
-    author: "Emily Rodriguez",
-    role: "VP Sales, SalesForce Pro",
+    author: "Akeens",
+    role: "UK based entrepreneur",
   },
 ];
 
